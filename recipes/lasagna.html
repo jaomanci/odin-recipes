@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      img {
+        width: 1000px;
+        border: radius 200px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <style>
+    h1 {
+      color: black;
+      font-size: 50px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+  <body>
+    <h1>
+      <strong
+        >Remembering 'The Lasagna Guy,' Recreating the Internet's #1 Lasagna
+        Recipe</strong
+      >
+    </h1>
+    <style>
+      .centered-heading {
+        text-align: center;
+        margin: 20px 0px 60px 0px;
+      }
+    </style>
+    <h1 class="centered-heading"></h1>
+    <img src="images/lasagna.jpg" alt="" />
+    <h2 class="centered-heading">Description</h2>
+    <style>
+      h2 {
+        color: black;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        .centered-heading {
+          text-align: center;
+          margin: 20px 0px 60px 0px;
+        }
+      }
+    </style>
+    <style>
+      p {
+        color: black;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px 20px 0px 20px;
+        text-align: center;
+      }
+    </style>
+
+    <p>
+      <strong>John Chandler</strong>, affectionately known as "The Lasagna Guy,"
+      was an internet sensation who created the web's most popular lasagna
+      recipe, garnering over 10 million views. His humble, straightforward
+      instructional video showcased his signature lasagna dish, featuring ground
+      beef, tomato sauce, and a blend of cheeses, all layered to perfection.
+      Chandler's folksy charm, matter-of-fact narration, and mouthwatering
+      lasagna captured the hearts and stomachs of home cooks worldwide,
+      cementing his place in internet culinary history.
+    </p>
+  </body>
+  <script>
+    const paragraph = document.querySelector("p");
+    const name = "John Chandler";
+    const url =
+      "http://abcnews.go.com/blogs/lifestyle/2013/10/meet-the-man-behind-the-worlds-best-lasagna-recipe";
+
+    const regex = new RegExp(name, "gi");
+    paragraph.innerHTML = paragraph.innerHTML.replace(
+      regex,
+      `<a href="${url}" target="_blank">${name}</a>`
+    );
+  </script>
+</html>
